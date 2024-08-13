@@ -11,6 +11,13 @@
 		AF7AA9962BDA481D00625D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7AA9952BDA481D00625D60 /* ContentView.swift */; };
 		AF7AA9982BDA481F00625D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7AA9972BDA481F00625D60 /* Assets.xcassets */; };
 		AF7AA99B2BDA481F00625D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7AA99A2BDA481F00625D60 /* Preview Assets.xcassets */; };
+		AFF58A6F2C08914300146CF8 /* TodaysDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A6E2C08914300146CF8 /* TodaysDate.swift */; };
+		AFF58A732C08932B00146CF8 /* MonthScrollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A722C08932B00146CF8 /* MonthScrollerView.swift */; };
+		AFF58A762C08961400146CF8 /* CalendarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A752C08961400146CF8 /* CalendarInfo.swift */; };
+		AFF58A782C08A3E200146CF8 /* CalendarPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A772C08A3E200146CF8 /* CalendarPageView.swift */; };
+		AFF58A7A2C08A69D00146CF8 /* MonthStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A792C08A69D00146CF8 /* MonthStruct.swift */; };
+		AFF58A7E2C08BE4000146CF8 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A7D2C08BE4000146CF8 /* DiaryView.swift */; };
+		AFF58A852C08E81A00146CF8 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF58A842C08E81A00146CF8 /* DiaryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		AF7AA9952BDA481D00625D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF7AA9972BDA481F00625D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7AA99A2BDA481F00625D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFF58A6E2C08914300146CF8 /* TodaysDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysDate.swift; sourceTree = "<group>"; };
+		AFF58A722C08932B00146CF8 /* MonthScrollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScrollerView.swift; sourceTree = "<group>"; };
+		AFF58A752C08961400146CF8 /* CalendarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInfo.swift; sourceTree = "<group>"; };
+		AFF58A772C08A3E200146CF8 /* CalendarPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPageView.swift; sourceTree = "<group>"; };
+		AFF58A792C08A69D00146CF8 /* MonthStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStruct.swift; sourceTree = "<group>"; };
+		AFF58A7D2C08BE4000146CF8 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		AFF58A842C08E81A00146CF8 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,9 @@
 			children = (
 				AF7AA9932BDA481D00625D60 /* DiaryOfDiabetesApp.swift */,
 				AF7AA9952BDA481D00625D60 /* ContentView.swift */,
+				AFF58A742C0895D400146CF8 /* Calendar */,
+				AFF58A7D2C08BE4000146CF8 /* DiaryView.swift */,
+				AFF58A832C08E7F100146CF8 /* Diary */,
 				AF7AA9972BDA481F00625D60 /* Assets.xcassets */,
 				AF7AA9992BDA481F00625D60 /* Preview Content */,
 			);
@@ -65,6 +82,26 @@
 				AF7AA99A2BDA481F00625D60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFF58A742C0895D400146CF8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				AFF58A6E2C08914300146CF8 /* TodaysDate.swift */,
+				AFF58A722C08932B00146CF8 /* MonthScrollerView.swift */,
+				AFF58A752C08961400146CF8 /* CalendarInfo.swift */,
+				AFF58A772C08A3E200146CF8 /* CalendarPageView.swift */,
+				AFF58A792C08A69D00146CF8 /* MonthStruct.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		AFF58A832C08E7F100146CF8 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				AFF58A842C08E81A00146CF8 /* DiaryModel.swift */,
+			);
+			path = Diary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF58A6F2C08914300146CF8 /* TodaysDate.swift in Sources */,
+				AFF58A762C08961400146CF8 /* CalendarInfo.swift in Sources */,
+				AFF58A7A2C08A69D00146CF8 /* MonthStruct.swift in Sources */,
+				AFF58A732C08932B00146CF8 /* MonthScrollerView.swift in Sources */,
+				AFF58A782C08A3E200146CF8 /* CalendarPageView.swift in Sources */,
 				AF7AA9962BDA481D00625D60 /* ContentView.swift in Sources */,
+				AFF58A7E2C08BE4000146CF8 /* DiaryView.swift in Sources */,
+				AFF58A852C08E81A00146CF8 /* DiaryModel.swift in Sources */,
 				AF7AA9942BDA481D00625D60 /* DiaryOfDiabetesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,8 +321,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +349,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
